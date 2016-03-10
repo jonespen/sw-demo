@@ -1,0 +1,11 @@
+Hei Bloggen!
+<img src="cat.gif" />
+<script>
+  navigator.serviceWorker.register('sw.js', {
+    scope: './'
+  }).then(function(sw) {
+    console.log("Registered!", sw);
+  }).catch(function(err) {
+    console.error("Error", err);
+  });
+</script>
